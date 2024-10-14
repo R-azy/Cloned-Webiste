@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
 
 *{
     box-sizing: border-box;
@@ -178,4 +178,57 @@ footer{
     margin-top: 25px;
     margin-left: 46px;
     align-items: center;
+}
+@media (max-width: 600px){
+    body{
+        width: 100%;
+        background-size:cover;
+        background-position-x: left;
+        padding: 0px;
+        border: 0px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .top{
+        padding: 0px;
+        margin: 0px;
+        
+        
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar{
+        display: flex;
+        width: 100%;
+    }
+    .nav-bar,ul{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .menu{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        padding-left: 20px;
+      
+    }
+    
+    .images{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+        gap: 20px;
+        
+        
+
+    }
+    .artists{
+        display: flex;
+        flex-direction: column;
+    }
 }
